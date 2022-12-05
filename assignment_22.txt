@@ -1,0 +1,74 @@
+1.
+
+X = 'iNeuron'
+
+
+def func():
+    print(X)
+
+
+func()
+
+2.
+
+X = 'iNeuron'
+
+def func():
+    X = 'NI!'
+
+func()
+
+print(X)
+
+3.
+
+X = 'iNeuron'
+
+def func():
+    X = 'NI'
+    print(X)
+
+
+func()
+
+NI
+
+print(X)
+
+4.
+
+X = 'iNeuron'
+
+def func():
+    global X
+    X = 'NI'
+
+func()
+
+print(X)
+
+
+5.
+
+
+X = 'iNeuron'
+def func():
+    X = 'NI'
+def nested():
+    print(X)
+nested()
+
+func() 
+
+X
+
+6.
+
+def func():
+    X = 'NI'
+def nested():
+    nonlocal X
+    X = 'Spam'
+nested()
+print(X)
+
